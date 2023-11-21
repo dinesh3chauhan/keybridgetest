@@ -15,7 +15,7 @@ app.options("/*", function(req, res, next){
 
 app.post("/api/task", saveTask);
 
-app.get("/",function(req,res){
+app.get("/hello",function(req,res){
     res.send("hello there");
 })
 app.all("*", (req, res) => {
